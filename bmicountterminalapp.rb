@@ -1,29 +1,56 @@
 #\usr\bin\env ruby
 require 'colorize'
 
- puts " -------------RUBY BMI CALCULATOR------------ "
- puts "|                                            |"
+ puts " -------------RUBY BMI CALCULATOR------------ ".colorize(:light_yellow)
+ puts "|                                            |".colorize(:light_yellow)
 
- puts "|     Hello there! Whats your name?          |"
-print "|     > "
+print "|".colorize(:light_yellow)
+print "     Hello there! Whats your name?".colorize(:light_white)
+ puts "          |".colorize(:light_yellow)
+
+
+print "|     > ".colorize(:light_yellow)
 name = gets.chomp.capitalize
- puts "|     Hi #{name}!!                             "
- puts "|    I need your weight and height           |"
- puts "|    for calculating your BMI.               |\n"
- puts "|   Q:  What is your weight in kg?           |\n"
-print "|   A: "
+print "|".colorize(:light_yellow)
+ puts "                                            |".colorize(:light_yellow)
+
+ puts "     Hi #{name}!!                             ".colorize(:light_white)
+
+
+print "|".colorize(:light_yellow)
+print "    I need your weight and height           ".colorize(:light_white)
+ puts "|".colorize(:light_yellow)
+print "|".colorize(:light_yellow)
+print "    for calculating your BMI.               ".colorize(:light_white)
+ puts "|\n".colorize(:light_yellow)
+
+
+
+print "|".colorize(:light_yellow)
+print "   Q:  What is your weight in kg?           ".colorize(:cyan)
+ puts "|".colorize(:light_yellow)
+print "|".colorize(:light_yellow)
+print "   A: ".colorize(:cyan)
 weight = gets.chomp.to_f
- puts "|   Q:  What is your height in cm?           |\n"
-print "|   A: "
+
+
+
+print "|".colorize(:light_yellow)
+print "   Q:  What is your height in cm?           ".colorize(:cyan)
+ puts "|".colorize(:light_yellow)
+print "|".colorize(:light_yellow)
+print "   A: ".colorize(:cyan)
 height = gets.chomp.to_f
 
+
+
 bmi = (weight/((height/100)**2)).round(2)
- puts "|                                            |"
- puts "|       Your BMI is #{bmi} kg/m2.             "
- puts "|............................................|"
- puts "|   According to Australian Government       |"
- puts "|        Depertment of Health:               |"
- puts "|                                            |"
+ puts "|                                            |".colorize(:light_yellow)
+ puts "        Your BMI is #{bmi} kg/m2.             ".colorize(:color => :light_red, :background => :light_cyan)
+ puts "|............................................|".colorize(:light_yellow)
+ puts "|   According to Australian Government       |".colorize(:light_green)
+ puts "|        Depertment of Health:               |".colorize(:light_green)
+ puts "|                                            |".colorize(:light_green)
 
 if bmi < 18.5
  puts "|     You are Considered UNDERWEIGHT         |"
@@ -66,7 +93,7 @@ else bmi > 30
  puts "|             health and wellbeing.          |"
 end
  puts "|                                            |"
- puts "|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|"
+ puts "|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|".colorize(:light_yellow)
  puts "|  Remember, BMI is just one way to assess   |"
  puts "|    whether you are a healthy weight.       |"
  puts "|      You could also try measuring          |"
@@ -74,6 +101,7 @@ end
  puts "|              your risk of                  |"
  puts "|     obesity-related chronic disease.       |"
  puts "|                                            |"
- puts "|****         Thanks for using           ****|"
- puts "|*********    Ruby BMI calculator    ********|"
- puts "|____________________________________________|"
+ puts "|****         Thanks for using           ****|".colorize(:light_magenta)
+ puts "|*********    Ruby BMI calculator    ********|".colorize(:light_blue)
+ puts "|**** Developed by: Syeda Ismat Farjana *****|".colorize(:yellow)
+ puts "|____________________________________________|".colorize(:light_yellow)

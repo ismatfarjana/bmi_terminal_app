@@ -1,4 +1,5 @@
 #\usr\bin\env ruby
+require 'colorize'
 
  puts " -------------RUBY BMI CALCULATOR------------ "
  puts "|                                            |"

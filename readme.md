@@ -31,7 +31,7 @@ This project aim to provide a terminal based BMI calculator.
 
 ## Improvement
 
-- [] Considering **Gender** and **Age**
-- [] Provide weight management plan based on **BMI**
-- [] Provide Diet plan
-- [] Improve on design
+- [ ] Considering **Gender** and **Age**
+- [ ] Provide weight management plan based on **BMI**
+- [ ] Provide Diet plan
+- [ ] Improve on design

@@ -10,7 +10,7 @@ print "     Hello there! Whats your name?".colorize(:light_white)
 
 
 print "|     > ".colorize(:light_yellow)
-name = gets.chomp.capitalize
+name = gets.chomp.split(" ").map { |x| x.capitalize}.join(" ")
 print "|".colorize(:light_yellow)
  puts "                                            |".colorize(:light_yellow)
 
@@ -46,7 +46,7 @@ height = gets.chomp.to_f
 
 bmi = (weight/((height/100)**2)).round(2)
  puts "|                                            |".colorize(:light_yellow)
- puts "        Your BMI is #{bmi} kg/m2.             ".colorize(:color => :light_red, :background => :light_cyan)
+ puts "        Your BMI is #{bmi} kg/m2.              ".colorize(:color => :light_red, :background => :light_cyan)
  puts "|............................................|".colorize(:light_yellow)
  puts "|   According to Australian Government       |".colorize(:light_green)
  puts "|        Depertment of Health:               |".colorize(:light_green)
